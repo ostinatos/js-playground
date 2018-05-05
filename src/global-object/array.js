@@ -149,4 +149,15 @@ console.debug("count the appearance of elements ", ["a", "b", "c", "b", "a", "d"
 {}
 ))
 
+/* 
+determine an object is array or not
+*/
+// isArray works in IE9 +
+console.debug("Array.isArray({})", Array.isArray({}));
+console.debug("Array.isArray([])", Array.isArray([]));
+console.debug("typeof []", typeof []);
+// even though instance of Array seems to work here. but in some case it is not reliable. see "javascript the definite guide" 7.10 for detail.
+console.debug("[] instanceof Array", [] instanceof Array);
+
+
 export default {}
