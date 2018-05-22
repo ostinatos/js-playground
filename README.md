@@ -2,6 +2,20 @@
 
 Collections of demo code for tasting and practicing syntax and features of javascript.
 
+## content
+
+### javascript module
+comparison between commonJS and ES6 module.
+
+### implementing design pattern using JS
+
+#### singleton
+using different approach to implement "singleton" pattern.
+
+1. static instance
+2. closure instance (not working in modern modular system)
+3. es6 class (actually the same as approach #1)
+
 ## References
 
 ### javascript modules

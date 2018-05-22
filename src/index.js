@@ -3,5 +3,7 @@
 
 // import "./global-object/array"
 
-import "./js-modules"
+// import "./js-modules"
+
+import "./design-patterns/singleton"
 console.log("hello javascript!")
