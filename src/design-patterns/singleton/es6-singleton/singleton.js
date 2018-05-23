@@ -5,7 +5,6 @@ this pattern is actually the same as "static instance" singleton pattern.
 class is only a syntax sugar.
 */
 class Singleton{
-    // static bar;
     
     constructor(){
         if(Singleton.instance){

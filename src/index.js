@@ -5,5 +5,8 @@
 
 // import "./js-modules"
 
-import "./design-patterns/singleton"
+// import "./design-patterns/singleton"
+
+import './design-patterns/factory'
+
 console.log("hello javascript!")
