@@ -7,6 +7,10 @@
 
 // import "./design-patterns/singleton"
 
-import './design-patterns/factory'
+// import './design-patterns/factory'
+
+// import './prototype'
+
+import './classes'
 
 console.log("hello javascript!")

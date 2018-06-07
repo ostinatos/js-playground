@@ -16,6 +16,9 @@ using different approach to implement "singleton" pattern.
 2. closure instance (not working in modern modular system)
 3. es6 class (actually the same as approach #1)
 
+### prototype vs. \_\_proto\_\_
+understanding prototype and \_\_proto\_\_
+
 ## References
 
 ### javascript modules
@@ -25,3 +28,5 @@ using different approach to implement "singleton" pattern.
 [JavaScript Modules Part 2: Module Bundling](https://medium.freecodecamp.org/javascript-modules-part-2-module-bundling-5020383cf306)
 
 [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
+
+[javascript the core](http://dmitrysoshnikov.com/ecmascript/javascript-the-core/)
