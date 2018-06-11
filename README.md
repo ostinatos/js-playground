@@ -19,6 +19,12 @@ using different approach to implement "singleton" pattern.
 ### prototype vs. \_\_proto\_\_
 understanding prototype and \_\_proto\_\_
 
+### class
+feature included:
+
+1. extends
+2. mix-ins
+
 ## References
 
 ### javascript modules
