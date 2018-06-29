@@ -1,4 +1,10 @@
 /* 
+holy-grail patterns for classical inheritance.
+keypoint:
+- use borrowing-constructor pattern to call parent's constructor in child's constructor.
+    so that child can have props of his own.
+- use temporary-constructor pattern (inherit function), 
+    so that child can inherit props from parent.prototype, and also avoid affecting parent's prototype while modifying child's prototype.
  */
 function Parent(name) {
     this.name = name || 'Adam';
@@ -57,3 +63,5 @@ console.debug("p.sayHi", p.sayHi);
 
 // kid's constructor name is right!
 console.debug("kid.constructor.name", kid.constructor.name);
+console.debug("kid instanceof Child", kid instanceof Child);
+console.debug("kid instanceof Parent", kid instanceof Parent);
