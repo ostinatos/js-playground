@@ -11,8 +11,9 @@
 
 // import './prototype'
 
-// import './classes'
+import './classes'
 
-import './design-patterns/classical-inheritance'
+// import './design-patterns/classical-inheritance'
+// import './design-patterns/prototypal-inheritance'
 
 console.log("hello javascript!")
