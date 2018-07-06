@@ -23,7 +23,7 @@ function Child(name) {
 
  */
 let inherit = (function(){
-    // define Pxy once! F will be trapped in this closure.
+    // define Pxy once! Pxy will be trapped in this closure.
     let Pxy = function (){};
     return function(child, base){
         // set Pxy.prototype
