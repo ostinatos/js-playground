@@ -16,6 +16,8 @@
 // import './design-patterns/classical-inheritance'
 // import './design-patterns/prototypal-inheritance'
 
-import './algorithm/quick-sort'
+// import './algorithm/quick-sort'
+
+import './function/default-parameter'
 
 console.log("hello javascript!")
