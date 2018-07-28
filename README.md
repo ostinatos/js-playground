@@ -25,6 +25,10 @@ feature included:
 1. extends
 2. mix-ins
 
+### algorithms
+
+1. quicksort
+
 ## References
 
 ### javascript modules

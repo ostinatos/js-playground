@@ -11,9 +11,11 @@
 
 // import './prototype'
 
-import './classes'
+// import './classes'
 
 // import './design-patterns/classical-inheritance'
 // import './design-patterns/prototypal-inheritance'
+
+import './algorithm/quick-sort'
 
 console.log("hello javascript!")
