@@ -18,6 +18,8 @@
 
 // import './algorithm/quick-sort'
 
-import './function/default-parameter'
+// import './function/default-parameter'
+
+import './operators/destructuring'
 
 console.log("hello javascript!")
