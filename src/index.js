@@ -20,6 +20,10 @@
 
 // import './function/default-parameter'
 
-import './operators/destructuring'
+// import './operators/destructuring'
+
+// import './global-object/object'
+
+import './patterns/variadic-function'
 
 console.log("hello javascript!")
