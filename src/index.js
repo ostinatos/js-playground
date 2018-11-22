@@ -1,3 +1,4 @@
+import "@babel/polyfill";
 // import './loops/loop-array'
 // import "./loops/loop-object"
 
@@ -24,6 +25,7 @@
 
 // import './global-object/object'
 
-import './patterns/variadic-function'
+// import './patterns/variadic-function'
+import './statement/async-await'
 
 console.log("hello javascript!")
