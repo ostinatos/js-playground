@@ -26,6 +26,8 @@ import "@babel/polyfill";
 // import './global-object/object'
 
 // import './patterns/variadic-function'
-import './statement/async-await'
+// import './statement/async-await'
+
+import './global-object/symbol'
 
 console.log("hello javascript!")
