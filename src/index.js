@@ -28,6 +28,8 @@ import "@babel/polyfill";
 // import './patterns/variadic-function'
 // import './statement/async-await'
 
-import './global-object/symbol'
+// import './global-object/symbol'
+
+import './design-patterns/shared-store'
 
 console.log("hello javascript!")
