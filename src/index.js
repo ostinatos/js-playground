@@ -17,7 +17,7 @@ import "@babel/polyfill";
 // import './design-patterns/classical-inheritance'
 // import './design-patterns/prototypal-inheritance'
 
-// import './algorithm/quick-sort'
+import './algorithm/sorting'
 
 // import './function/default-parameter'
 
@@ -30,6 +30,6 @@ import "@babel/polyfill";
 
 // import './global-object/symbol'
 
-import './design-patterns/shared-store'
+// import './design-patterns/shared-store'
 
 console.log("hello javascript!")

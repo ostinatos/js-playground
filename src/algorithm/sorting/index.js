@@ -1,6 +1,8 @@
 // import { quicksort } from './juejin-quicksort'
-import { quicksort } from './in-place-quicksort'
-
+import { quicksort } from './quick-sort/in-place-quicksort'
+import { insertionSort, insertionSortOpt} from './insertion-sort'
+import { bubbleSort} from './bubble-sort'
+import { selectionSort} from './selection-sort'
 let arr = [];
 
 // 生成随机整数
@@ -23,7 +25,11 @@ console.log("array before sort: ", arr);
 
 console.time('xm');
 
-quicksort(arr);
+// quicksort(arr);
+// insertionSort(arr);
+insertionSortOpt(arr);
+// bubbleSort(arr);
+// selectionSort(arr);
 
 console.timeEnd('xm');
 
