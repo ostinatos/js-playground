@@ -1,64 +1,37 @@
-/* 
-example from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
-*/
-var resolveAfter2Seconds = function () {
-    console.log("starting slow promise");
+async function returnPromise() {
+
     return new Promise(resolve => {
-        setTimeout(function () {
-            resolve(20);
-            console.log("slow promise is done");
+        setTimeout(() => {
+            console.log("processing async result...")
+            resolve("this is an async result")
         }, 2000);
-    });
-};
-
-var resolveAfter1Second = function () {
-    console.log("starting fast promise");
-    return new Promise(resolve => {
-        setTimeout(function () {
-            resolve(10);
-            console.log("fast promise is done");
-        }, 1000);
-    });
-};
-
-var sequentialStart = async function () {
-    console.log('==SEQUENTIAL START==');
-
-    // If the value of the expression following the await operator is not a Promise, it's converted to a resolved Promise.
-    const slow = await resolveAfter2Seconds();
-
-    const fast = await resolveAfter1Second();
-    console.log(slow);
-    console.log(fast);
+    })
 }
 
-var concurrentStart = async function () {
-    console.log('==CONCURRENT START with await==');
-    const slow = resolveAfter2Seconds(); // starts timer immediately
-    const fast = resolveAfter1Second();
+// this will not be compiled successfully.
+// let a = await returnPromise();
 
-    console.log(await slow);
-    console.log(await fast); // waits for slow to finish, even though fast is already done!
+async function getReturnPromise() {
+    // await can only be written within async function
+    let a = await returnPromise();
+    console.log("right after await ")
+    console.log(a);
 }
 
-var stillConcurrent = function () {
-    console.log('==CONCURRENT START with Promise.all==');
-    Promise.all([resolveAfter2Seconds(), resolveAfter1Second()]).then((messages) => {
-        console.log(messages[0]); // slow
-        console.log(messages[1]); // fast
-    });
+function cannotGetReturnPromise() {
+    // this will not be compiled.
+    // let a = await returnPromise();
 }
 
-var parallel = function () {
-    console.log('==PARALLEL with Promise.then==');
-    resolveAfter2Seconds().then((message) => console.log(message));
-    resolveAfter1Second().then((message) => console.log(message));
+
+function notUsingAwait(){
+    let a = returnPromise();
+    console.log("right after await ")
+    console.log(a);
+    a.then(result=>console.log("result printed from non-async function: ", result))
 }
 
-sequentialStart(); // after 2 seconds, logs "slow", then after 1 more second, "fast"
-// wait above to finish
-setTimeout(concurrentStart, 4000); // after 2 seconds, logs "slow" and then "fast"
-// wait again
-setTimeout(stillConcurrent, 7000); // same as concurrentStart
-// wait again
-setTimeout(parallel, 10000); // trully parallel: after 1 second, logs "fast", then after 1 more second, "slow"
+// compare the difference between notUsingAwait() and getReturnPromise()
+// getReturnPromise()
+
+notUsingAwait();
