@@ -31,10 +31,12 @@
 // import './patterns/variadic-function'
 
 // import './statement/async-await'
-import './statement/async-await-2'
+// import './statement/async-await-2'
 
 // import './global-object/symbol'
 
 // import './design-patterns/shared-store'
+
+import './cases/xhr-download'
 
 console.log("hello javascript!")
