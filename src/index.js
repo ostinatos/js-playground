@@ -37,6 +37,9 @@
 
 // import './design-patterns/shared-store'
 
-import './cases/xhr-download'
+// import './cases/xhr-download'
+
+// import './utils/debounce'
+import './utils/throttle'
 
 console.log("hello javascript!")
