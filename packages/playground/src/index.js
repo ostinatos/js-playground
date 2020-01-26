@@ -24,7 +24,7 @@
 
 // import './function/default-parameter'
 
-// import './operators/destructuring'
+import './operators/destructuring'
 
 // import './global-object/object'
 
@@ -40,6 +40,6 @@
 // import './cases/xhr-download'
 
 // import './utils/debounce'
-import './utils/throttle'
+// import './utils/throttle'
 
 console.log("hello javascript!")

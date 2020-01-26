@@ -1,0 +1,32 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "description": "common js playground. have fun with JS.",
+  "author": "revlekt <revlekt@gmail.com>",
+  "homepage": "https://github.com/ostinatos/js-playground#readme",
+  "license": "ISC",
+  "main": "lib/playground.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ostinatos/js-playground.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --progress --watch",
+    "serve": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "bugs": {
+    "url": "https://github.com/ostinatos/js-playground/issues"
+  }
+}

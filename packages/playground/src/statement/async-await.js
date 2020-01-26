@@ -32,6 +32,6 @@ function notUsingAwait(){
 }
 
 // compare the difference between notUsingAwait() and getReturnPromise()
-// getReturnPromise()
+getReturnPromise()
 
-notUsingAwait();
+// notUsingAwait();

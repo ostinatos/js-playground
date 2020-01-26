@@ -17,7 +17,7 @@ module.exports = {
             title: 'Development'
         }),
         new CopyPlugin([
-            { from: 'test', to: 'test' },
+            { from: 'test-utils', to: 'test' },
         ])
     ],
     output: {

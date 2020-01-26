@@ -3,12 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --progress --watch",
-    "start": "webpack-dev-server",
-    "build": "webpack"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,18 +13,29 @@
     "@babel/plugin-transform-async-to-generator": "^7.1.0",
     "@babel/preset-env": "^7.1.6",
     "babel-loader": "^8.0.4",
-    "clean-webpack-plugin": "^0.1.19",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^4.0.0",
     "css-loader": "^0.28.11",
     "csv-loader": "^2.1.1",
     "file-loader": "^0.11.2",
-    "html-webpack-plugin": "^2.29.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lerna": "^3.20.2",
+    "rollup": "^1.29.1",
+    "rollup-plugin-terser": "^5.2.0",
     "style-loader": "^0.18.2",
-    "webpack": "^3.0.0",
-    "webpack-dev-server": "^2.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "wepack": "^0.0.1",
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0"
-  }
+    "async-dep-module-demo": "file:packages/async-dep-module-demo",
+    "module-host-demo": "file:packages/module-host-demo",
+    "playground": "file:packages/playground"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
 }
