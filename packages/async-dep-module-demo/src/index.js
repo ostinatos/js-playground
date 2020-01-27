@@ -1,11 +1,13 @@
 // sync import
-// import { asyncDep } from './async-dep'
+import { syncDep } from './sync-dep'
 
-function add(x, y) {
-    import('./async-dep').then(({ asyncDep }) => {
+function asyncAdd(x, y) {
+    syncDep();
+    return import('./async-dep').then(({ asyncDep }) => {
         asyncDep();
+        return x + y;
     })
-    return x + y;
+    
 }
 
-export { add }
+export { asyncAdd }

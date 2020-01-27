@@ -8,5 +8,6 @@ module.exports = {
         library: "moduleDemo",
         libraryTarget: "umd"
     },
+    // for better code inspection, we use "development" mode here.
     mode: "development"
 };

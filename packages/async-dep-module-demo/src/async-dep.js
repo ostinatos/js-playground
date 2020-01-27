@@ -1,5 +1,5 @@
 function asyncDep() {
-    console.log("[async-dep] do customized job")
+    console.log("[async-dep] do some complicated stuff")
 }
 
 export { asyncDep }
