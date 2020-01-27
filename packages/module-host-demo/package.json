@@ -13,8 +13,5 @@
   "license": "ISC",
   "dependencies": {
     "async-dep-module-demo": "file:../async-dep-module-demo"
-  },
-  "devDependencies": {
-    "webpack-bundle-analyzer": "^3.6.0"
   }
 }

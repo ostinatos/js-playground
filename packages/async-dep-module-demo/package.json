@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/demo.umd.js",
-  "module": "dist-esm/index.js",
+  "module": "dist-amd/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn build:umd && yarn build:esm",
@@ -12,7 +12,9 @@
   },
   "files": [
     "dist",
-    "dist-esm"
+    "dist-esm",
+    "dist-cjs",
+    "dist-amd"
   ],
   "keywords": [],
   "author": "",

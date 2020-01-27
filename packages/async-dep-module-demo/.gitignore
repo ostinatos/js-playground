@@ -65,3 +65,5 @@ test/
 # ignore distributed files
 dist/
 dist-esm/
+dist-cjs/
+dist-amd/

@@ -5575,6 +5575,11 @@ modify-values@^1.0.0:
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
 
+"module-host-demo@file:packages/module-host-demo":
+  version "1.0.0"
+  dependencies:
+    async-dep-module-demo "file:../../../../Library/Caches/Yarn/v6/npm-module-host-demo-1.0.0-82d987ab-b5ec-428c-acdc-384fff8c03b4-1580116285475/node_modules/async-dep-module-demo"
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -6332,6 +6337,9 @@ pkg-dir@^3.0.0:
   integrity sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==
   dependencies:
     find-up "^3.0.0"
+
+"playground@file:packages/playground":
+  version "0.0.0"
 
 portfinder@^1.0.25:
   version "1.0.25"
