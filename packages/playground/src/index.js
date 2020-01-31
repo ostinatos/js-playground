@@ -24,7 +24,7 @@
 
 // import './function/default-parameter'
 
-import './operators/destructuring'
+// import './operators/destructuring'
 
 // import './global-object/object'
 
@@ -41,5 +41,7 @@ import './operators/destructuring'
 
 // import './utils/debounce'
 // import './utils/throttle'
+
+import './patterns/closures'
 
 console.log("hello javascript!")
