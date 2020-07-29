@@ -28,5 +28,8 @@
   },
   "bugs": {
     "url": "https://github.com/ostinatos/js-playground/issues"
+  },
+  "dependencies": {
+    "uuid": "^8.2.0"
   }
 }

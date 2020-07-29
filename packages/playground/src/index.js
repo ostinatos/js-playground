@@ -42,6 +42,10 @@
 // import './utils/debounce'
 // import './utils/throttle'
 
-import './patterns/closures'
+// import './patterns/closures'
+
+// import './global-object/map'
+
+import './patterns/tree-search'
 
 console.log("hello javascript!")
