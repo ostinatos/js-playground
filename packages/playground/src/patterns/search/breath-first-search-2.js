@@ -1,4 +1,5 @@
 /**  
+ * BFS using recursion
 @param {Array|Object} nodes , root node is object, otherwise is array
 @return {Boolean} found or not 
 */
