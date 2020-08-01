@@ -1,7 +1,6 @@
 // this is fully import polyfill
 // import "@babel/polyfill";
 
-
 // import './loops/loop-array'
 // import "./loops/loop-object"
 
@@ -25,6 +24,7 @@
 // import './function/default-parameter'
 
 // import './operators/destructuring'
+import "./operators/optional-chaining";
 
 // import './global-object/object'
 
@@ -43,9 +43,9 @@
 // import './utils/throttle'
 
 // import './patterns/closures'
+// import "./patterns/tree-search";
 
 // import './global-object/map'
 
-import './patterns/tree-search'
 
-console.log("hello javascript!")
+console.log("hello javascript!");

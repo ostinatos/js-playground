@@ -32,5 +32,8 @@ module.exports = {
                 loader: "babel-loader"
             }
         ]
+    },
+    optimization: {
+        minimize: false
     }
 };
