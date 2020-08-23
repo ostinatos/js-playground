@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "serve": "lerna exec yarn serve --scope playground"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
