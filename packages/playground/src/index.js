@@ -25,6 +25,7 @@
 
 // import './operators/destructuring'
 // import "./operators/optional-chaining";
+import './operators/this'
 
 // import './global-object/object'
 
@@ -47,6 +48,6 @@
 
 // import './global-object/map'
 
-import './leetcode/spiral-matrix'
+// import './leetcode/spiral-matrix'
 
 console.log("hello javascript!");
