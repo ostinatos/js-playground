@@ -35,6 +35,7 @@
 // import './statement/async-await-2'
 
 // import './global-object/symbol'
+import './global-object/proxy'
 
 // import './design-patterns/shared-store'
 
@@ -49,6 +50,6 @@
 // import './global-object/map'
 
 // import './leetcode/spiral-matrix'
-import './leetcode/longest-substr-without-repeating-char'
+// import './leetcode/longest-substr-without-repeating-char'
 
 console.log("hello javascript!");
