@@ -35,7 +35,7 @@
 // import './statement/async-await-2'
 
 // import './global-object/symbol'
-import './global-object/proxy'
+// import './global-object/proxy'
 
 // import './design-patterns/shared-store'
 
@@ -51,5 +51,6 @@ import './global-object/proxy'
 
 // import './leetcode/spiral-matrix'
 // import './leetcode/longest-substr-without-repeating-char'
+import './leetcode/rearrange-flight'
 
 console.log("hello javascript!");

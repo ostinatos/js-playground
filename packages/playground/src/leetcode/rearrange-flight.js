@@ -1,103 +1,70 @@
+import { testcase } from "./rearrange-flight-testcase";
+
+class PriorityQueue {
+  constructor() {
+    this.queue = [];
+  }
+  enqueue(item) {
+    //   用最简单的方法加入队列
+    // 顺序找到第一个比输入item大的元素k，加入到k的前面
+    let targetIndex = -1;
+    for (let i = 0; i < this.queue.length; i++) {
+      if (this.queue[i] > item) {
+        targetIndex = i;
+        break;
+      }
+    }
+    if (targetIndex === -1) {
+      // 没找到比item大的元素，把item加入末尾
+      this.queue.push(item);
+    } else {
+      this.queue.splice(targetIndex, 0, item);
+    }
+  };
+  // 从头部弹出item
+  dequeue() {
+    return this.queue.shift();
+  };
+
+  size() {
+    return this.queue.length;
+  }
+}
+
 /**
  * @param {string[][]} tickets
  * @return {string[]}
  */
 var findItinerary = function (tickets) {
-  // 以起点为key，ticket index 数组为value的一个对象
-  const flightByStartPoint = {};
-  const availableRoutes = [];
-
-  for (let i = 0; i < tickets.length; i++) {
-    // 按每张票的起点，记录相应的票的index
-    flightByStartPoint[tickets[i][0]] = flightByStartPoint[tickets[i][0]] || [];
-    flightByStartPoint[tickets[i][0]].push(i);
+  // 遍历所有机票，创建一个以起点为key，value为按字母顺序排列的终点队列
+  const starterMap = {};
+  for (let ticket of tickets) {
+    // 之前当前ticket的起点还没在map中出现过
+    if (!starterMap[ticket[0]]) {
+      //create new priority queue to store destination
+      starterMap[ticket[0]] = new PriorityQueue();
+    }
+    // enqueue current ticket destination
+    starterMap[ticket[0]].enqueue(ticket[1]);
   }
 
-  const compareRoute = (route1, route2) => {
-    let returnValue = 0;
-    // < 0, less than
-    // =0, equal
-    // > 0, larger than
-    const comparePort = (port1, port2) => {
-      let ret = 0;
-      for (let i = 0; i < 3; i++) {
-        let ret = port1.charCodeAt(i) - port2.charCodeAt(i);
-        if (ret !== 0) {
-          return ret;
-        }
-      }
-      return ret;
-    };
-    for (let i = 0; i < route1.length; i++) {
-      let returnValue = comparePort(route1[i], route2[i]);
-      if (returnValue !== 0) {
-        break;
-      }
+  //   路径
+  const route = [];
+
+  const dfs = function (startPort) {
+    //   当输入节点startPort仍然有可行的路径时，则先递归探索可行路径
+    while (starterMap[startPort] && starterMap[startPort].size() > 0) {
+      // 按优先级获取优先的目的地节点
+      const tmp = starterMap[startPort].dequeue();
+      dfs(tmp);
     }
-    if (returnValue <= 0) {
-      return route1;
-    } else {
-      return route2;
-    }
+    // 当没有可行的路径，意味着进入了胡同，或者是可走的路都走过了，此时将当前节点加入路线中
+    route.push(startPort);
   };
 
-  //@param {String} start, start port
-  //@param {Array} usedTickets, used ticket index
-  //@return {Array} available route (including start port), empty if no available route
-  const findAvailableRoute = (start, usedTickets) => {
-    // 以start为起点的ticket index 集合
-    let viableTickets = flightByStartPoint[start];
-    // 可行的线路集合，二维数组
-    let candidateRoute = [];
-    if (viableTickets && viableTickets.length > 0) {
-      for (viableTicket of viableTickets) {
-        if (
-          usedTickets.findIndex(
-            (ticketIndex) => ticketIndex === viableTicket
-          ) === -1
-        ) {
-          // viable ticket 没在 usedTickets 中，证明是可行的，
-          let rt = null;
-          if (usedTickets.length + 1 === tickets.length) {
-            // 当前已经是最后一个ticket，不需要再递归查找
-            rt = [tickets[viableTicket][1]];
-          } else {
-            //继续递归查找
-            rt = findAvailableRoute(
-              // 以可行ticket的终点为起点
-              tickets[viableTicket][1],
-              // 这里用concat 重新创造一个使用过的ticket数组
-              [viableTicket].concat(usedTickets)
-            );
-          }
-          if (rt.length > 0) {
-            // 找到可行路径，结合start 一起返回
-            if (candidateRoute.length === 0) {
-              // 之前还没可行路径，直接赋值
-              candidateRoute = rt;
-            } else {
-              // 之前已经有，需要和之前的路径比较
-              candidateRoute = compareRoute(candidateRoute, rt);
-            }
-          }
-        }
-      } //end for
-    }
+  dfs("JFK");
 
-    if (candidateRoute.length > 0) {
-      return [start].concat(candidateRoute);
-    } else {
-      return [];
-    }
-  };
-
-  // 循环每个以JFK开头的票，查找可能的路径
-  findAvailableRoute("JFK", []);
+  return route.reverse();
 };
 
-findItinerary([
-  ["MUC", "LHR"],
-  ["JFK", "MUC"],
-  ["SFO", "SJC"],
-  ["LHR", "SFO"],
-]);
+console.log(findItinerary(testcase[1]));
