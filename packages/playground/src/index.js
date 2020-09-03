@@ -18,6 +18,7 @@
 
 // import './design-patterns/classical-inheritance'
 // import './design-patterns/prototypal-inheritance'
+import "./design-patterns/factory/factory-method";
 
 // import './algorithm/sorting'
 
@@ -53,6 +54,6 @@
 // import './leetcode/longest-substr-without-repeating-char'
 // import './leetcode/rearrange-flight'
 
-import "./data-structure/priority-queue";
+// import "./data-structure/priority-queue";
 
 console.log("hello javascript!");
