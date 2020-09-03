@@ -51,6 +51,8 @@
 
 // import './leetcode/spiral-matrix'
 // import './leetcode/longest-substr-without-repeating-char'
-import './leetcode/rearrange-flight'
+// import './leetcode/rearrange-flight'
+
+import "./data-structure/priority-queue";
 
 console.log("hello javascript!");
