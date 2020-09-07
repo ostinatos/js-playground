@@ -18,7 +18,7 @@
 
 // import './design-patterns/classical-inheritance'
 // import './design-patterns/prototypal-inheritance'
-import "./design-patterns/factory/factory-method";
+// import "./design-patterns/factory/factory-method";
 
 // import './algorithm/sorting'
 
@@ -55,5 +55,7 @@ import "./design-patterns/factory/factory-method";
 // import './leetcode/rearrange-flight'
 
 // import "./data-structure/priority-queue";
+import "./data-structure/fifo-queue";
+import "./data-structure/deque";
 
 console.log("hello javascript!");
