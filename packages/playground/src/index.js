@@ -13,6 +13,7 @@
 // import './design-patterns/factory'
 
 // import './prototype'
+import './prototype/prototype-chain'
 
 // import './classes'
 
@@ -55,7 +56,7 @@
 // import './leetcode/rearrange-flight'
 
 // import "./data-structure/priority-queue";
-import "./data-structure/fifo-queue";
-import "./data-structure/deque";
+// import "./data-structure/fifo-queue";
+// import "./data-structure/deque";
 
 console.log("hello javascript!");
