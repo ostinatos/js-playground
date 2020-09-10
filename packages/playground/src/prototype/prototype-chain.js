@@ -7,6 +7,8 @@ class Minion {
 const kevin = new Minion("kevin");
 const josh = new Minion("josh");
 
+Minion.prototype.banana = "banana";
+
 /* class instance object's __proto__ */
 console.log(
   "kevin.__proto__ === Minion.prototype",
@@ -42,3 +44,6 @@ console.log(
   "Minion.prototype.constructor === Minion",
   Minion.prototype.constructor === Minion
 );
+
+
+console.log(`kevin.banana === "banana"`, kevin.banana === "banana");
