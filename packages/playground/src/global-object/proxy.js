@@ -53,3 +53,17 @@ following error will be thrown
 Uncaught TypeError: Cannot perform 'get' on a proxy that has been revoked
 */
 // console.log("revokableProxy.id ", revokableProxy.id);
+
+/* demostrate array proxy */
+const arr = [];
+
+// intercept array 
+const arrProxy = new Proxy(arr, {
+  set(obj, prop, value) {
+    console.log(`array set item [${prop}]: ${value}`);
+    // call native set logic
+    return Reflect.set(...arguments);
+  },
+});
+
+arrProxy[0] = "bob moses";

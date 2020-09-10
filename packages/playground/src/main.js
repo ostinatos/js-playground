@@ -13,7 +13,7 @@
 // import './design-patterns/factory'
 
 // import './prototype'
-import './prototype/prototype-chain'
+// import './prototype/prototype-chain'
 
 // import './classes'
 
@@ -37,7 +37,7 @@ import './prototype/prototype-chain'
 // import './statement/async-await-2'
 
 // import './global-object/symbol'
-// import './global-object/proxy'
+import './global-object/proxy'
 
 // import './design-patterns/shared-store'
 
