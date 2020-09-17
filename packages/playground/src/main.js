@@ -38,7 +38,8 @@
 
 // import './global-object/symbol'
 // import './global-object/proxy'
-
+// import './global-object/map'
+import './global-object/promise'
 // import './design-patterns/shared-store'
 
 // import './cases/xhr-download'
@@ -49,7 +50,6 @@
 // import './patterns/closures'
 // import "./patterns/tree-search";
 
-// import './global-object/map'
 
 // import './leetcode/spiral-matrix'
 // import './leetcode/longest-substr-without-repeating-char'
@@ -60,9 +60,9 @@
 // import "./data-structure/priority-queue";
 // import "./data-structure/fifo-queue";
 // import "./data-structure/deque";
-import "./data-structure/stack/array-stack";
-import "./data-structure/stack/object-stack";
-import "./data-structure/stack/array-stack-using-symbol";
-import "./data-structure/stack/array-stack-using-weakmap";
+// import "./data-structure/stack/array-stack";
+// import "./data-structure/stack/object-stack";
+// import "./data-structure/stack/array-stack-using-symbol";
+// import "./data-structure/stack/array-stack-using-weakmap";
 
 console.log("hello javascript!");
