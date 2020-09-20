@@ -39,7 +39,7 @@
 // import './global-object/symbol'
 // import './global-object/proxy'
 // import './global-object/map'
-import './global-object/promise'
+// import './global-object/promise'
 // import './design-patterns/shared-store'
 
 // import './cases/xhr-download'
@@ -49,7 +49,7 @@ import './global-object/promise'
 
 // import './patterns/closures'
 // import "./patterns/tree-search";
-
+import './patterns/iteration-protocol/my-iterable'
 
 // import './leetcode/spiral-matrix'
 // import './leetcode/longest-substr-without-repeating-char'

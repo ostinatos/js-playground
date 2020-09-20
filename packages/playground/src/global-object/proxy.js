@@ -67,3 +67,7 @@ const arrProxy = new Proxy(arr, {
 });
 
 arrProxy[0] = "bob moses";
+arrProxy[0] = undefined;
+
+console.log("typeof arrProxy", typeof arrProxy);
+console.log("typeof arr", typeof arr);
