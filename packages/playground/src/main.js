@@ -16,6 +16,7 @@
 // import './prototype/prototype-chain'
 
 // import './classes'
+import './classes/inheritance/class-inheritance'
 
 // import './design-patterns/classical-inheritance'
 // import './design-patterns/prototypal-inheritance'
@@ -49,7 +50,7 @@
 
 // import './patterns/closures'
 // import "./patterns/tree-search";
-import './patterns/iteration-protocol/my-iterable'
+// import './patterns/iteration-protocol/my-iterable'
 
 // import './leetcode/spiral-matrix'
 // import './leetcode/longest-substr-without-repeating-char'
@@ -64,5 +65,7 @@ import './patterns/iteration-protocol/my-iterable'
 // import "./data-structure/stack/object-stack";
 // import "./data-structure/stack/array-stack-using-symbol";
 // import "./data-structure/stack/array-stack-using-weakmap";
+
+// import './lint-examples/function-usage'
 
 console.log("hello javascript!");
