@@ -30,8 +30,4 @@ class MyIterable {
   }
 }
 
-const it = new MyIterable([1, 2, 3, 4, 5]);
-
-for (let i of it) {
-  console.log(i);
-}
+export default MyIterable;
