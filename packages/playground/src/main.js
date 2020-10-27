@@ -51,13 +51,14 @@
 // import './patterns/closures'
 // import "./patterns/tree-search";
 // import './patterns/iteration-protocol';
+import './patterns/array-traverse'
 
 // import './leetcode/spiral-matrix'
 // import './leetcode/longest-substr-without-repeating-char'
 // import './leetcode/rearrange-flight'
 // import './leetcode/decode-string'
 // import './leetcode/decode-string-using-stack'
-import "./leetcode/105-construct-binary-tree-from-pre-in";
+// import "./leetcode/105-construct-binary-tree-from-pre-in";
 // import "./leetcode/114-flatten-binary-tree";
 // import "./leetcode/654-constuct-max-binary-tree";
 // import "./leetcode/889-construct-binary-tree";
