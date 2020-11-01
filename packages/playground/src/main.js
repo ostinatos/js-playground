@@ -60,9 +60,11 @@
 // import './leetcode/decode-string-using-stack'
 // import "./leetcode/105-construct-binary-tree-from-pre-in";
 // import "./leetcode/114-flatten-binary-tree";
-import "./leetcode/297-serialize-deserialize-binary-tree/index";
+// import "./leetcode/297-serialize-deserialize-binary-tree/index";
 // import "./leetcode/654-constuct-max-binary-tree";
 // import "./leetcode/889-construct-binary-tree";
+
+import "./educative/sliding-window/average-of-contiguous-sub-array-of-size-k";
 
 // import "./data-structure/priority-queue";
 // import "./data-structure/fifo-queue";
