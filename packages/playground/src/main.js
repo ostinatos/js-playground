@@ -64,7 +64,8 @@
 // import "./leetcode/654-constuct-max-binary-tree";
 // import "./leetcode/889-construct-binary-tree";
 
-import "./educative/sliding-window/average-of-contiguous-sub-array-of-size-k";
+// import "./educative/sliding-window/average-of-contiguous-sub-array-of-size-k";
+// import "./educative/sliding-window/max-sum-subarray-of-size-k";
 
 // import "./data-structure/priority-queue";
 // import "./data-structure/fifo-queue";
@@ -73,6 +74,7 @@ import "./educative/sliding-window/average-of-contiguous-sub-array-of-size-k";
 // import "./data-structure/stack/object-stack";
 // import "./data-structure/stack/array-stack-using-symbol";
 // import "./data-structure/stack/array-stack-using-weakmap";
+import './data-structure/heap/index'
 
 // import './lint-examples/function-usage'
 
