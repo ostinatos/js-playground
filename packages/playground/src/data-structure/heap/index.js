@@ -1,6 +1,6 @@
 import MinHeap from "./min-heap";
 
-const minHeap = new MinHeap();
+const minHeap = new MinHeap({ comparator: (a, b) => a - b });
 window.minHeap = minHeap;
 
 minHeap.insert(10);

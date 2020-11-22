@@ -296,7 +296,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/plugin-syntax-optional-chaining@^7.8.0", "@babel/plugin-syntax-optional-chaining@^7.8.3":
+"@babel/plugin-syntax-optional-chaining@^7.8.0":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-optional-chaining/-/plugin-syntax-optional-chaining-7.8.3.tgz#4f69c2ab95167e0180cd5336613f8c5788f7d48a"
   integrity sha512-KoK9ErH1MBlCPxV0VANkXW2/dw4vlbGDrFgz8bmUsBGYkFRcbRwMh6cIJubdPrkxRwuGdtCk0v/wPTKbQgBjkg==
@@ -2584,6 +2584,13 @@ collection-visit@^1.0.0:
   dependencies:
     map-visit "^1.0.0"
     object-visit "^1.0.0"
+
+collections@^5.1.12:
+  version "5.1.12"
+  resolved "https://registry.yarnpkg.com/collections/-/collections-5.1.12.tgz#270f6c26ddc2930734ae6cc19ad4e8fb412af739"
+  integrity sha512-7WV0gdGlQFHjB//+/5JW4CdMnOlf7fWMMeM3EWvuao7RbK0MeFS01bZOgWmIH5DHDejSutf455QUZ56ZjjROXw==
+  dependencies:
+    weak-map "~1.0.x"
 
 color-convert@^1.3.0, color-convert@^1.9.0:
   version "1.9.3"
@@ -8344,6 +8351,11 @@ wcwidth@^1.0.0:
   integrity sha1-8LDc+RW8X/FSivrbLA4XtTLaL+g=
   dependencies:
     defaults "^1.0.3"
+
+weak-map@~1.0.x:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/weak-map/-/weak-map-1.0.5.tgz#79691584d98607f5070bd3b70a40e6bb22e401eb"
+  integrity sha1-eWkVhNmGB/UHC9O3CkDmuyLkAes=
 
 webidl-conversions@^4.0.2:
   version "4.0.2"

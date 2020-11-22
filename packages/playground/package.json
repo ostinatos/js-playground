@@ -30,6 +30,7 @@
     "url": "https://github.com/ostinatos/js-playground/issues"
   },
   "dependencies": {
+    "collections": "^5.1.12",
     "uuid": "^8.2.0"
   },
   "devDependencies": {

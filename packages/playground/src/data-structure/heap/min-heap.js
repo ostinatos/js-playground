@@ -1,7 +1,15 @@
 export default class MinHeap {
-  constructor() {
+  /**
+   * @param {Function} comparator, (a,b)=>{},
+   * > 0 if a is greater than b
+   * = 0 if a is equal to b
+   * < 0 if a is less than b
+   */
+  constructor({ comparator } = {}) {
     // use array to implement min-heap
     this.heap = [];
+    // store the comparator function
+    this.comparator = comparator;
   }
 
   /* utilities function */
@@ -35,14 +43,14 @@ export default class MinHeap {
     // determine min value between leftIndex and index
     if (
       leftIndex <= this.heap.length - 1 &&
-      this.heap[leftIndex] < this.heap[index]
+      this.comparator(this.heap[leftIndex], this.heap[index]) < 0
     ) {
       candidateIndex = leftIndex;
     }
     // determine min value between rightIndex and candidate index
     if (
       rightIndex <= this.heap.length - 1 &&
-      this.heap[rightIndex] < this.heap[candidateIndex]
+      this.comparator(this.heap[rightIndex], this.heap[candidateIndex]) < 0
     ) {
       candidateIndex = rightIndex;
     }
@@ -65,7 +73,7 @@ export default class MinHeap {
       return;
     }
     let parentIndex = this.parent(index);
-    if (this.heap[index] < this.heap[parentIndex]) {
+    if (this.comparator(this.heap[index], this.heap[parentIndex]) < 0) {
       // current index value less than parent:
       // swap and call siftDown recursively
       this.swap(index, parentIndex);
