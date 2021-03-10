@@ -52,6 +52,7 @@
 // import "./patterns/tree-search";
 // import './patterns/iteration-protocol';
 // import './patterns/array-traverse'
+import './patterns/bfs/standard-bfs'
 
 // import './leetcode/spiral-matrix'
 // import './leetcode/longest-substr-without-repeating-char'
@@ -65,7 +66,7 @@
 // import "./leetcode/889-construct-binary-tree";
 // import "./leetcode/210-course-schedule-ii";
 // import "./leetcode/269-alien-dictionary";
-import './leetcode/26-remove-duplicates-from-sorted-array'
+// import './leetcode/26-remove-duplicates-from-sorted-array';
 
 // import "./educative/sliding-window/average-of-contiguous-sub-array-of-size-k";
 // import "./educative/sliding-window/max-sum-subarray-of-size-k";
@@ -83,4 +84,4 @@ import './leetcode/26-remove-duplicates-from-sorted-array'
 
 // import './lint-examples/function-usage'
 
-console.log("hello javascript!");
+console.log("hello javascript");
