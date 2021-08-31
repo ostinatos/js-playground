@@ -52,7 +52,7 @@
 // import "./patterns/tree-search";
 // import './patterns/iteration-protocol';
 // import './patterns/array-traverse'
-import './patterns/bfs/standard-bfs'
+// import './patterns/bfs/standard-bfs'
 
 // import './leetcode/spiral-matrix'
 // import './leetcode/longest-substr-without-repeating-char'
@@ -72,7 +72,8 @@ import './patterns/bfs/standard-bfs'
 // import "./educative/sliding-window/max-sum-subarray-of-size-k";
 // import "./educative/topological-sort/all-tasks-scheduling-order";
 // import "./educative/topological-sort/all-tasks-scheduling-order-solution";
-
+// import './educative/fast-and-slow-pointer/linked-list-cycle'
+import './educative/fast-and-slow-pointer/start-of-linked-list-cycle'
 // import "./data-structure/priority-queue";
 // import "./data-structure/fifo-queue";
 // import "./data-structure/deque";
