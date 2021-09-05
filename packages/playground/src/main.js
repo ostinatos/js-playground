@@ -73,7 +73,10 @@
 // import "./educative/topological-sort/all-tasks-scheduling-order";
 // import "./educative/topological-sort/all-tasks-scheduling-order-solution";
 // import './educative/fast-and-slow-pointer/linked-list-cycle'
-import './educative/fast-and-slow-pointer/start-of-linked-list-cycle'
+// import './educative/fast-and-slow-pointer/start-of-linked-list-cycle'
+// import './educative/fast-and-slow-pointer/happy-number'
+import "./educative/fast-and-slow-pointer/middle-of-linked-list";
+
 // import "./data-structure/priority-queue";
 // import "./data-structure/fifo-queue";
 // import "./data-structure/deque";
