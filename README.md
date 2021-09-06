@@ -2,14 +2,18 @@
 
 Collections of demo code for tasting and practicing syntax and features of javascript.
 
-## content
+Also some algorithm solutions are included.
+
+## 1. content
 
 ### javascript module
+
 comparison between commonJS and ES6 module.
 
 ### implementing design pattern using JS
 
 #### singleton
+
 using different approach to implement "singleton" pattern.
 
 1. static instance
@@ -17,6 +21,7 @@ using different approach to implement "singleton" pattern.
 3. es6 class (actually the same as approach #1)
 
 ### prototype vs. \_\_proto\_\_
+
 understanding prototype and \_\_proto\_\_
 
 ### ES6
@@ -24,6 +29,7 @@ understanding prototype and \_\_proto\_\_
 #### destructuring
 
 #### class
+
 feature included:
 
 1. extends
@@ -33,7 +39,13 @@ feature included:
 
 1. quicksort
 
-## References
+## 2. TODO
+
+- [ ] typescript support
+- [ ] jest support
+- [ ] interface declaration for algorithm utilities
+
+## 3. References
 
 ### javascript modules
 

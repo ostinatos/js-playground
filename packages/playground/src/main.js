@@ -75,7 +75,8 @@
 // import './educative/fast-and-slow-pointer/linked-list-cycle'
 // import './educative/fast-and-slow-pointer/start-of-linked-list-cycle'
 // import './educative/fast-and-slow-pointer/happy-number'
-import "./educative/fast-and-slow-pointer/middle-of-linked-list";
+// import "./educative/fast-and-slow-pointer/middle-of-linked-list";
+import "./educative/fast-and-slow-pointer/palindromic-linked-list";
 
 // import "./data-structure/priority-queue";
 // import "./data-structure/fifo-queue";
