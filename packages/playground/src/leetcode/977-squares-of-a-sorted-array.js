@@ -3,29 +3,32 @@
  * @return {number[]}
  */
 const sortedSquares = function (arr) {
-  squares = [];
-  //   edge case: input array is empty
   if (arr.length === 0) {
-    return squares;
+    return arr;
   }
+  // result array
+  let squares = [];
 
-  let head = 0,
-    tail = arr.length - 1;
-  let headSquare = 0,
-    tailSquare = 0;
-  // loop while head does not meet tail
+  let head = 0;
+  let tail = arr.length - 1;
+
+  // loop end conditions:  head meets tail
   while (head < tail) {
-    headSquare = arr[head] * arr[head];
-    tailSquare = arr[tail] * arr[tail];
-    if (headSquare > tailSquare) {
-      squares.unshift(headSquare);
+    let headSqr = Math.pow(arr[head], 2);
+    let tailSqr = Math.pow(arr[tail], 2);
+
+    if (headSqr >= tailSqr) {
+      squares.unshift(headSqr);
       head++;
     } else {
-      squares.unshift(tailSquare);
+      squares.unshift(tailSqr);
       tail--;
     }
   }
-  // head meets tail, head === tail, unshift last element
-  squares.unshift(arr[tail] * arr[tail]);
+  // 最终状态，head === tail，并且指向的元素是最小的
+  squares.unshift(Math.pow(arr[head], 2));
+
   return squares;
 };
+
+console.log(sortedSquares([-4, -1, 0, 3, 10]));

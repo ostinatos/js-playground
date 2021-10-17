@@ -67,6 +67,8 @@
 // import "./leetcode/210-course-schedule-ii";
 // import "./leetcode/269-alien-dictionary";
 // import './leetcode/26-remove-duplicates-from-sorted-array';
+// import "./leetcode/80-remove-duplicates";
+import './leetcode/977-squares-of-a-sorted-array'
 
 // import "./educative/sliding-window/average-of-contiguous-sub-array-of-size-k";
 // import "./educative/sliding-window/max-sum-subarray-of-size-k";
@@ -76,7 +78,8 @@
 // import './educative/fast-and-slow-pointer/start-of-linked-list-cycle'
 // import './educative/fast-and-slow-pointer/happy-number'
 // import "./educative/fast-and-slow-pointer/middle-of-linked-list";
-import "./educative/fast-and-slow-pointer/palindromic-linked-list";
+// import "./educative/fast-and-slow-pointer/palindromic-linked-list";
+// import "./educative/fast-and-slow-pointer/rearange-linked-list";
 
 // import "./data-structure/priority-queue";
 // import "./data-structure/fifo-queue";
