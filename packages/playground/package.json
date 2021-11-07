@@ -13,18 +13,15 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
+  "publishConfig": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ostinatos/js-playground.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --progress --watch",
-    "serve": "webpack-dev-server",
-    "build": "webpack"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
   },
   "bugs": {
     "url": "https://github.com/ostinatos/js-playground/issues"
@@ -34,6 +31,7 @@
     "uuid": "^8.2.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-optional-chaining": "^7.11.0"
+    "typescript": "^4.3.2",
+    "vite": "^2.6.4"
   }
 }

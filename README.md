@@ -4,6 +4,20 @@ Collections of demo code for tasting and practicing syntax and features of javas
 
 Also some algorithm solutions are included.
 
+Build and compile by `vite`, the project setup and dependencies are now more simpler, and runs faster.
+
+## 0. How to Run
+
+run following command at project root:
+
+```bash
+yarn
+```
+
+```bash
+yarn dev
+```
+
 ## 1. content
 
 ### javascript module
@@ -41,7 +55,7 @@ feature included:
 
 ## 2. TODO
 
-- [ ] typescript support
+- [x] typescript support
 - [ ] jest support
 - [ ] interface declaration for algorithm utilities
 
