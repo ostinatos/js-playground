@@ -2,5 +2,4 @@
 // import './borrowing-constructor'
 // import './temporary-constructor'
 // import './shared-prototype'
-import './holy-grail-pattern'
-
+import './holy-grail-pattern';

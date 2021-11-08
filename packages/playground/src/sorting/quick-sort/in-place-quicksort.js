@@ -19,7 +19,6 @@ analysis to the edge case is vital important.
 在quick sort中，这个关键的edge case就是只剩两个元素时候的情况。
 */
 
-
 function quicksort(arr) {
     quick(arr, 0, arr.length - 1);
 }
@@ -32,8 +31,8 @@ function quick(arr, startIndex, endIndex) {
     let pivotIndex = partition(arr, startIndex, endIndex);
     // why should we use start to pivot-1 here? not start to pivot?
     // think about the edge case: partition will ALWAYS return endIndex when startIndex + 1 = endIndex !
-    if (startIndex < pivotIndex-1) {
-        quick(arr, startIndex, pivotIndex-1);
+    if (startIndex < pivotIndex - 1) {
+        quick(arr, startIndex, pivotIndex - 1);
     }
     if (pivotIndex < endIndex) {
         quick(arr, pivotIndex, endIndex);

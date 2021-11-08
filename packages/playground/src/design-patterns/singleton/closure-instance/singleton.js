@@ -10,15 +10,15 @@ so rewriting the variable is only visible inside the closure, the code outside t
 
 var Singleton;
 
-Singleton = function() {
-    console.debug("executing original Singleton constructor.")
+Singleton = function () {
+    console.debug('executing original Singleton constructor.');
     let instance = this;
-    this.foo = "wuwu";
-    this.goo = "dodo";
+    this.foo = 'wuwu';
+    this.goo = 'dodo';
     // in modern modular system, the following rewriting is only visible inside current module.
-    Singleton = function(){ 
+    Singleton = function () {
         return instance;
-    }
-}
+    };
+};
 
 export default Singleton;

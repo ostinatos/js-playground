@@ -4,7 +4,7 @@ function Parent(name) {
 
 Parent.prototype.say = function () {
     return this.name;
-}
+};
 
 function Child(name) {
     // invoke parent's constructor function.
@@ -16,21 +16,21 @@ share the prototype!!!
 */
 Child.prototype = Parent.prototype;
 
-let kid = new Child("Patrick");
+let kid = new Child('Patrick');
 
-console.debug("kid.name", kid.name);
+console.debug('kid.name', kid.name);
 
 // method on parent's prototype can be inherited.
-console.debug("kid.say", kid.say());
+console.debug('kid.say', kid.say());
 
 // change something on child's prototype
 Child.prototype.sayHi = function () {
-    return "hi"
-}
+    return 'hi';
+};
 
 // will affect child's instance
-console.debug("kid.sayHi", kid.sayHi());
+console.debug('kid.sayHi', kid.sayHi());
 
 // but WILL ALSO affect parent's instance.
 let p = new Parent();
-console.debug("p.sayHi", p.sayHi());
+console.debug('p.sayHi', p.sayHi());

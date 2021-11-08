@@ -5,13 +5,12 @@
  * @param {*} arr
  */
 function insertionSort(arr) {
-
     for (let i = 1; i < arr.length; i++) {
         for (let j = i; j > 0 && arr[j] < arr[j - 1]; j--) {
             // [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]]
-            let t = arr[j]
-            arr[j] = arr[j - 1]
-            arr[j - 1] = t
+            let t = arr[j];
+            arr[j] = arr[j - 1];
+            arr[j - 1] = t;
         }
     }
 }
@@ -25,13 +24,12 @@ function insertionSort(arr) {
 function insertionSortOpt(arr) {
     for (let i = 1; i < arr.length; i++) {
         let current = arr[i];
-        let j = i
+        let j = i;
         for (; j > 0 && arr[j - 1] > current; j--) {
-            arr[j] = arr[j - 1]
+            arr[j] = arr[j - 1];
         }
         arr[j] = current;
-
     }
 }
 
-export { insertionSort, insertionSortOpt }
+export { insertionSort, insertionSortOpt };

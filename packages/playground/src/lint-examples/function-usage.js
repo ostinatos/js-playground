@@ -7,9 +7,9 @@ variable is used before definition.
 // testf2();
 
 function testf() {
-  console.log("testf");
+    console.log('testf');
 }
 
 const testf2 = function () {
-  console.log("testf2");
+    console.log('testf2');
 };

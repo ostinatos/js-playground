@@ -5,18 +5,18 @@ but this is not that useful in reality due to the fact that this is only working
 var Singleton;
 
 Singleton = function () {
-    console.debug("executing original Singleton constructor.")
+    console.debug('executing original Singleton constructor.');
     let instance = this;
-    this.foo = "wuwu";
-    this.goo = "dodo";
+    this.foo = 'wuwu';
+    this.goo = 'dodo';
     // in modern modular system, the following rewriting is only visible inside current module.
     Singleton = function () {
         return instance;
-    }
-}
+    };
+};
 
 let s1 = new Singleton();
 let s2 = new Singleton();
-console.debug("s1 === s2: ", s1 === s2);
+console.debug('s1 === s2: ', s1 === s2);
 
 export default null;

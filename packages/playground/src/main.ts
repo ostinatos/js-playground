@@ -69,7 +69,7 @@
 // import './leetcode/26-remove-duplicates-from-sorted-array';
 // import "./leetcode/80-remove-duplicates";
 // import './leetcode/977-squares-of-a-sorted-array'
-import "./leetcode/15-3sums";
+import './leetcode/15-3sums';
 
 // import "./educative/sliding-window/average-of-contiguous-sub-array-of-size-k";
 // import "./educative/sliding-window/max-sum-subarray-of-size-k";
@@ -93,4 +93,4 @@ import "./leetcode/15-3sums";
 
 // import './lint-examples/function-usage'
 
-console.log("hello javascript");
+console.log('hello javascript');

@@ -11,7 +11,7 @@ http://exploringjs.com/es6/ch_classes.html
 */
 
 // approach 1: define property on class.
-let classA = (function (){
+let classA = (function () {
     class Point {
         constructor(x, y) {
             this.x = x;
@@ -23,22 +23,22 @@ let classA = (function (){
 })();
 
 // approach: static getter.
-let classB = (function(){
-    class Point{
+let classB = (function () {
+    class Point {
         constructor(x, y) {
             this.x = x;
             this.y = y;
         }
 
-        static get ZERO(){
+        static get ZERO() {
             return new Point(0, 0);
         }
     }
     return Point;
-})()
+})();
 
-function testcase(classDef){
-    console.debug("classDef.ZERO ", classDef.ZERO);
+function testcase(classDef) {
+    console.debug('classDef.ZERO ', classDef.ZERO);
 }
 
 testcase(classA);

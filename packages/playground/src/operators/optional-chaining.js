@@ -1,7 +1,7 @@
 let obj = {
-  a: {
-    b: "1",
-  },
+    a: {
+        b: '1',
+    },
 };
 
 /**
@@ -10,6 +10,6 @@ console.log("using optional chaining to avoid property access error: obj?.c?.d",
  * 
  */
 console.log(
-  "using optional chaining to avoid property access error: obj?.c?.d",
-  obj?.c?.d
+    'using optional chaining to avoid property access error: obj?.c?.d',
+    obj?.c?.d
 );

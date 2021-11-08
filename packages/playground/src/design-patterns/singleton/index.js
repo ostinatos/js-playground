@@ -19,13 +19,13 @@ in fact, creating object using object literal means creating a singleton.
 
 // import Singleton from './static-instance/singleton'
 // import Singleton from './closure-instance/singleton'
-import Singleton from './es6-singleton/singleton'
+import Singleton from './es6-singleton/singleton';
 
 let s1 = new Singleton();
 let s2 = new Singleton();
-console.debug("s1 === s2: ", s1 === s2);
+console.debug('s1 === s2: ', s1 === s2);
 
-console.debug("Singleton.instance: ", Singleton.instance);
+console.debug('Singleton.instance: ', Singleton.instance);
 
 // import './closure-instance/working-closure-singleton-test'
 

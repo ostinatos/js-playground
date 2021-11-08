@@ -8,13 +8,7 @@
 
 // import './commonjs-async'
 
-import './cyclic-dependency/cyclic-test-es6'
-import './cyclic-dependency/cyclic-test-cjs'
+import './cyclic-dependency/cyclic-test-es6';
+import './cyclic-dependency/cyclic-test-cjs';
 
-console.log("hello javascript module.")
-
-
-
-
-
-
+console.log('hello javascript module.');

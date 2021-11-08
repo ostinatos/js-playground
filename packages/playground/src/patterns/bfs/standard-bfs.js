@@ -1,27 +1,27 @@
 class Node {
-  constructor({ val, left, right }) {
-    this.val = val;
-    this.left = left;
-    this.right = right;
-  }
+    constructor({ val, left, right }) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
 }
 
 function bfs(node, func) {
-  if (!node) {
-    return node;
-  }
-  let pendingNodes = [node];
-  while (pendingNodes.length > 0) {
-    let currentNode = pendingNodes.shift();
-    // visit current node
-    func(currentNode);
-    if (currentNode.left) {
-      pendingNodes.push(currentNode.left);
+    if (!node) {
+        return node;
     }
-    if (currentNode.right) {
-      pendingNodes.push(currentNode.right);
+    let pendingNodes = [node];
+    while (pendingNodes.length > 0) {
+        let currentNode = pendingNodes.shift();
+        // visit current node
+        func(currentNode);
+        if (currentNode.left) {
+            pendingNodes.push(currentNode.left);
+        }
+        if (currentNode.right) {
+            pendingNodes.push(currentNode.right);
+        }
     }
-  }
 }
 
 const node1 = new Node({ val: 1 });
@@ -39,5 +39,5 @@ node3.left = node6;
 node3.right = node7;
 
 bfs(node1, (node) => {
-  console.log(node.val);
+    console.log(node.val);
 });

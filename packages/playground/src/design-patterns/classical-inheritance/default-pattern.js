@@ -6,7 +6,7 @@ set child prototype to a new parent object.
 DRAWBACK of this approach is that, child will "inherit" parent's "own" properties, which on registered on parent instance.
 */
 
-function inherit(Child, Parent){
+function inherit(Child, Parent) {
     // set child prototype to a new parent object.
     Child.prototype = new Parent();
 }
@@ -20,13 +20,13 @@ function Parent(name) {
 
 Parent.prototype.say = function () {
     return this.name;
-}
+};
 
-function Child(name) { }
+function Child(name) {}
 
 inherit(Child, Parent);
 
-let kid = new Child("Patrick");
-console.debug("kid.say()", kid.say());
+let kid = new Child('Patrick');
+console.debug('kid.say()', kid.say());
 
 export default {};

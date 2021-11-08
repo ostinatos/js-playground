@@ -1,10 +1,10 @@
-function Singleton(){
-    if(typeof Singleton.instance === "object"){
+function Singleton() {
+    if (typeof Singleton.instance === 'object') {
         return Singleton.instance;
     }
 
-    this.foo = "wawawa";
-    this.goo = "bababa";
+    this.foo = 'wawawa';
+    this.goo = 'bababa';
 
     Singleton.instance = this;
 

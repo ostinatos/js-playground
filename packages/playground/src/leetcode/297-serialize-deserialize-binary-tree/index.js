@@ -1,6 +1,6 @@
 // import { serialize, deserialize } from "./preorder-dfs";
-import { serialize, deserialize } from "./bfs";
-import { TreeNode } from "./treenode";
+import { serialize, deserialize } from './bfs';
+import { TreeNode } from './treenode';
 
 const four = new TreeNode(4);
 const five = new TreeNode(5);

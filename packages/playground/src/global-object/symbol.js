@@ -9,14 +9,16 @@ use case #1: declare constant
 
 const gender = {
     male: Symbol('male'),
-    female: Symbol('female')
-}
+    female: Symbol('female'),
+};
 
-console.debug("gender.male == 'male':", gender.male == 'male')
-console.debug("gender.male === 'male':", gender.male === 'male')
-console.debug("gender.male === gender.female:", gender.male === gender.female)
+console.debug("gender.male == 'male':", gender.male == 'male');
+console.debug("gender.male === 'male':", gender.male === 'male');
+console.debug('gender.male === gender.female:', gender.male === gender.female);
 // notice: following will return false. call symbol with same argument will result in different symbol.
-console.debug("gender.male === Symbol('male'):", gender.male === Symbol('male'))
+console.debug(
+    "gender.male === Symbol('male'):",
+    gender.male === Symbol('male')
+);
 // this is the only way to make it return true
-console.debug("gender.male === gender.male:", gender.male === gender.male)
-
+console.debug('gender.male === gender.male:', gender.male === gender.male);

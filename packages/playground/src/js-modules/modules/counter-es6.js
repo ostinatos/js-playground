@@ -1,7 +1,7 @@
 var count = 0;
 
-function increment(){
+function increment() {
     count++;
 }
 
-export {count, increment};
+export { count, increment };

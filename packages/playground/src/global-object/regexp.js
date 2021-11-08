@@ -1,1 +1,1 @@
-let regexp = new RegExp("\\")
+let regexp = new RegExp('\\');

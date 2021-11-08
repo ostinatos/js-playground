@@ -5,33 +5,33 @@ parent is larger than children
 left child is larger than right child
 */
 class MaxHeap {
-  constructor() {
-    this.heap = [];
-  }
+    constructor() {
+        this.heap = [];
+    }
 
-  parent(index) {
-    return Math.floor((index - 1) / 2);
-  }
-  leftChild(index) {
-    return index * 2 + 1;
-  }
-  rightChild(index) {
-    return index * 2 + 2;
-  }
+    parent(index) {
+        return Math.floor((index - 1) / 2);
+    }
+    leftChild(index) {
+        return index * 2 + 1;
+    }
+    rightChild(index) {
+        return index * 2 + 2;
+    }
 
-  swap(index1, index2) {
-    const tmp = this.heap[index1];
-    this.heap[index1] = this.heap[index2];
-    this.heap[index2] = tmp;
-  }
+    swap(index1, index2) {
+        const tmp = this.heap[index1];
+        this.heap[index1] = this.heap[index2];
+        this.heap[index2] = tmp;
+    }
 
-  //   return the root node of current max heap
-  peek() {
-    return this.heap[0];
-  }
+    //   return the root node of current max heap
+    peek() {
+        return this.heap[0];
+    }
 
-  // insert new element to heap.
-  /* 
+    // insert new element to heap.
+    /* 
   logic: 
   add element to the end of the array
   and repeatly compare the added element and its parent
@@ -41,52 +41,55 @@ class MaxHeap {
   this insertion logic only ensure the parent is larger than children
   left child is not guaranteed to be larger than right child
   */
-  insert(element) {
-    this.heap.push(element);
+    insert(element) {
+        this.heap.push(element);
 
-    //   get the newly inserted element's index
-    let currentIndex = this.heap.length - 1;
-    while (
-      this.heap[this.parent(currentIndex)] < this.heap[currentIndex] &&
-      currentIndex !== 0
-    ) {
-      this.swap(currentIndex, this.parent(currentIndex));
-      currentIndex = this.parent(currentIndex);
-    }
-  }
-
-  heapify(index) {
-    let left = this.leftChild(index);
-    let right = this.rightChild(index);
-    let toBeSwap = index;
-
-    if (left < this.heap.length && this.heap[left] > this.heap[toBeSwap]) {
-      // to be swap is the one with greater value
-      toBeSwap = left;
-    }
-    if (right < this.heap.length && this.heap[right] > this.heap[toBeSwap]) {
-      toBeSwap = right;
-    }
-    if (toBeSwap !== index) {
-      this.swap(toBeSwap, index);
-      this.heapify(toBeSwap);
-    }
-  }
-
-  extractMax() {
-    //   remove the first element off the array (the root node)
-    const root = this.heap.shift();
-
-    // get the last element of the array, and add it to the root of heap (first element of the array)
-    const lastElement = this.heap.pop();
-    if (lastElement !== undefined) {
-      this.heap.unshift(lastElement);
+        //   get the newly inserted element's index
+        let currentIndex = this.heap.length - 1;
+        while (
+            this.heap[this.parent(currentIndex)] < this.heap[currentIndex] &&
+            currentIndex !== 0
+        ) {
+            this.swap(currentIndex, this.parent(currentIndex));
+            currentIndex = this.parent(currentIndex);
+        }
     }
 
-    // correctly reposition the heap
+    heapify(index) {
+        let left = this.leftChild(index);
+        let right = this.rightChild(index);
+        let toBeSwap = index;
 
-    return root;
-  }
+        if (left < this.heap.length && this.heap[left] > this.heap[toBeSwap]) {
+            // to be swap is the one with greater value
+            toBeSwap = left;
+        }
+        if (
+            right < this.heap.length &&
+            this.heap[right] > this.heap[toBeSwap]
+        ) {
+            toBeSwap = right;
+        }
+        if (toBeSwap !== index) {
+            this.swap(toBeSwap, index);
+            this.heapify(toBeSwap);
+        }
+    }
+
+    extractMax() {
+        //   remove the first element off the array (the root node)
+        const root = this.heap.shift();
+
+        // get the last element of the array, and add it to the root of heap (first element of the array)
+        const lastElement = this.heap.pop();
+        if (lastElement !== undefined) {
+            this.heap.unshift(lastElement);
+        }
+
+        // correctly reposition the heap
+
+        return root;
+    }
 }
 
 const pq = new MaxHeap();

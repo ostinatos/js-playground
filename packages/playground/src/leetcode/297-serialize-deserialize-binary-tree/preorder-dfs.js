@@ -1,4 +1,4 @@
-import { TreeNode } from "./treenode";
+import { TreeNode } from './treenode';
 
 /**
  * Encodes a tree to a single string.
@@ -7,14 +7,14 @@ import { TreeNode } from "./treenode";
  * @return {string}
  */
 var serialize = function (root) {
-  // use pre-order traversal
-  if (!root) {
-    // return hash for empty node
-    return "#";
-  }
-  const leftTreeString = serialize(root.left);
-  const rightTreeString = serialize(root.right);
-  return `${root.val},${leftTreeString},${rightTreeString}`;
+    // use pre-order traversal
+    if (!root) {
+        // return hash for empty node
+        return '#';
+    }
+    const leftTreeString = serialize(root.left);
+    const rightTreeString = serialize(root.right);
+    return `${root.val},${leftTreeString},${rightTreeString}`;
 };
 /**
  *
@@ -26,28 +26,28 @@ var serialize = function (root) {
  * root node
  */
 const desHelper = function (nodeValues, startIndex) {
-  if (nodeValues[startIndex] === "#") {
-    return {
-      root: null,
-      endIndex: startIndex,
-    };
-  }
-  const root = new TreeNode(nodeValues[startIndex]);
-  const { root: leftRoot, endIndex: leftEndIndex } = desHelper(
-    nodeValues,
-    startIndex + 1
-  );
-  const { root: rightRoot, endIndex: rightEndIndex } = desHelper(
-    nodeValues,
-    leftEndIndex + 1
-  );
+    if (nodeValues[startIndex] === '#') {
+        return {
+            root: null,
+            endIndex: startIndex,
+        };
+    }
+    const root = new TreeNode(nodeValues[startIndex]);
+    const { root: leftRoot, endIndex: leftEndIndex } = desHelper(
+        nodeValues,
+        startIndex + 1
+    );
+    const { root: rightRoot, endIndex: rightEndIndex } = desHelper(
+        nodeValues,
+        leftEndIndex + 1
+    );
 
-  root.left = leftRoot;
-  root.right = rightRoot;
-  return {
-    root,
-    endIndex: rightEndIndex,
-  };
+    root.left = leftRoot;
+    root.right = rightRoot;
+    return {
+        root,
+        endIndex: rightEndIndex,
+    };
 };
 
 /**
@@ -57,9 +57,9 @@ const desHelper = function (nodeValues, startIndex) {
  * @return {TreeNode}
  */
 var deserialize = function (data) {
-  const nodeValues = data.split(",");
-  const { root } = desHelper(nodeValues, 0);
-  return root;
+    const nodeValues = data.split(',');
+    const { root } = desHelper(nodeValues, 0);
+    return root;
 };
 
 export { serialize, deserialize };

@@ -1,3 +1,3 @@
 module.exports = {
-    p1:"abc"
-}
+    p1: 'abc',
+};

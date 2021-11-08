@@ -5,7 +5,7 @@
 var alienOrder = function (words) {
     // edge case, words is empty or only one word is present
     if (words.length === 0) {
-        return "";
+        return '';
     }
 
     // compare adjacent words in input words, to find all the directed edges,
@@ -30,7 +30,11 @@ var alienOrder = function (words) {
 
     // invalid flag for invalid case
     let invalidFlag = false;
-    for (let pt1 = 0, pt2 = 1; !invalidFlag && pt2 < words.length; pt1++ , pt2++) {
+    for (
+        let pt1 = 0, pt2 = 1;
+        !invalidFlag && pt2 < words.length;
+        pt1++, pt2++
+    ) {
         // char pointer
         let charPt = 0;
         // move char pointer while
@@ -57,8 +61,8 @@ var alienOrder = function (words) {
         }
     }
 
-    if(invalidFlag){
-        return "";
+    if (invalidFlag) {
+        return '';
     }
 
     // find the source vertex
@@ -84,10 +88,10 @@ var alienOrder = function (words) {
         });
     }
     if (ret.length === Object.keys(inDegree).length) {
-        return ret.join("");
+        return ret.join('');
     } else {
-        return "";
+        return '';
     }
 };
 
-console.log(alienOrder(["wnlb"]));
+console.log(alienOrder(['wnlb']));

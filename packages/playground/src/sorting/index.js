@@ -1,8 +1,8 @@
 // import { quicksort } from './juejin-quicksort'
-import { quicksort } from './quick-sort/in-place-quicksort'
-import { insertionSort, insertionSortOpt} from './insertion-sort'
-import { bubbleSort} from './bubble-sort'
-import { selectionSort} from './selection-sort'
+import { quicksort } from './quick-sort/in-place-quicksort';
+import { insertionSort, insertionSortOpt } from './insertion-sort';
+import { bubbleSort } from './bubble-sort';
+import { selectionSort } from './selection-sort';
 let arr = [];
 
 // 生成随机整数
@@ -17,11 +17,11 @@ function generateArr(len) {
     }
 }
 
-generateArr(1000)
+generateArr(1000);
 
 // arr = [1, 9, 1, 6, 3, 1]
 // arr = [6,6]
-console.log("array before sort: ", arr);
+console.log('array before sort: ', arr);
 
 console.time('xm');
 
@@ -33,4 +33,4 @@ insertionSortOpt(arr);
 
 console.timeEnd('xm');
 
-console.log("array after sort: ", arr);
+console.log('array after sort: ', arr);

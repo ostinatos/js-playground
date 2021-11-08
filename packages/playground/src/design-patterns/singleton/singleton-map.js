@@ -12,12 +12,12 @@ no namespace for singleton.
 */
 let store = {};
 
-function set(key, value){
+function set(key, value) {
     store[key] = value;
 }
 
-function get(key){
-    return store[key]
+function get(key) {
+    return store[key];
 }
 
-export {set, get};
+export { set, get };

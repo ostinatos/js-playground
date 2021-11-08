@@ -3,11 +3,10 @@ these are some live examples for javascript modularization.
 https://webpack.js.org/api/module-methods/
 */
 
-console.log("es6 approach.")
-
+console.log('es6 approach.');
 
 // ES6: statically import syntax
-import multiply from './modules/math'
+import multiply from './modules/math';
 
 var result1 = multiply(2, 21);
 console.log(result1);
@@ -20,8 +19,7 @@ console.log(result1);
 import(
     /* webpackChunkName: "my-divide" */
     /* webpackMode: "lazy" */
-    "./modules/divide").then(math => {
-        console.log(math.divide(84, 1));
-    })
-
-
+    './modules/divide'
+).then((math) => {
+    console.log(math.divide(84, 1));
+});

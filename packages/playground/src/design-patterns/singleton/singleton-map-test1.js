@@ -1,4 +1,4 @@
-import {set} from './singleton-map'
+import { set } from './singleton-map';
 
-set("foo", "yoyo");
-set("goo", "hoho");
+set('foo', 'yoyo');
+set('goo', 'hoho');

@@ -1,11 +1,10 @@
 async function returnPromise() {
-
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
         setTimeout(() => {
-            console.log("processing async result...")
-            resolve("this is an async result")
+            console.log('processing async result...');
+            resolve('this is an async result');
         }, 2000);
-    })
+    });
 }
 
 // this will not be compiled successfully.
@@ -14,7 +13,7 @@ async function returnPromise() {
 async function getReturnPromise() {
     // await can only be written within async function
     let a = await returnPromise();
-    console.log("right after await ")
+    console.log('right after await ');
     console.log(a);
 }
 
@@ -23,15 +22,16 @@ function cannotGetReturnPromise() {
     // let a = await returnPromise();
 }
 
-
-function notUsingAwait(){
+function notUsingAwait() {
     let a = returnPromise();
-    console.log("right after await ")
+    console.log('right after await ');
     console.log(a);
-    a.then(result=>console.log("result printed from non-async function: ", result))
+    a.then((result) =>
+        console.log('result printed from non-async function: ', result)
+    );
 }
 
 // compare the difference between notUsingAwait() and getReturnPromise()
-getReturnPromise()
+getReturnPromise();
 
 // notUsingAwait();

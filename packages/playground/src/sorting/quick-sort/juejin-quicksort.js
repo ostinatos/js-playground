@@ -16,7 +16,7 @@ function quick(array, left, right) {
 }
 function quicksort(array) {
     return quick(array, 0, array.length - 1);
-};
+}
 
 // 划分操作函数
 function partition(array, left, right) {
@@ -54,5 +54,4 @@ function swap(array, a, b) {
     [array[a], array[b]] = [array[b], array[a]];
 }
 
-
-export {quicksort}
+export { quicksort };

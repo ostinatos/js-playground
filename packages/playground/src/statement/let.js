@@ -13,11 +13,11 @@ https://stackoverflow.com/questions/16473350/let-keyword-in-the-for-loop
 */
 var things = {};
 for (let i = 0; i < 3; i++) {
-    things["fun" + i] = function () {
+    things['fun' + i] = function () {
         console.log(i);
     };
 }
 
-things["fun0"](); // prints 3
-things["fun1"](); // prints 3
-things["fun2"](); // prints 3
+things['fun0'](); // prints 3
+things['fun1'](); // prints 3
+things['fun2'](); // prints 3

@@ -1,6 +1,6 @@
-import {count} from './cyclic-counter-es6'
+import { count } from './cyclic-counter-es6';
 
-console.debug("cyclic dep case: es6 style: get count: ", count);
+console.debug('cyclic dep case: es6 style: get count: ', count);
 
-let message = "message from 'cylic-test-es6.js'"
-export {message}
+let message = "message from 'cylic-test-es6.js'";
+export { message };

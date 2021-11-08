@@ -1,4 +1,4 @@
-import './es-module-style'
+import './es-module-style';
 // import './commonjs-style'
 
 /* 

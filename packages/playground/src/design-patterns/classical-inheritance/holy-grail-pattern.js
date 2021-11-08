@@ -12,7 +12,7 @@ function Parent(name) {
 
 Parent.prototype.say = function () {
     return this.name;
-}
+};
 
 function Child(name) {
     // invoke parent's constructor function.
@@ -22,10 +22,10 @@ function Child(name) {
 /*
 
  */
-let inherit = (function(){
+let inherit = (function () {
     // define Pxy once! Pxy will be trapped in this closure.
-    let Pxy = function (){};
-    return function(child, base){
+    let Pxy = function () {};
+    return function (child, base) {
         // set Pxy.prototype
         Pxy.prototype = base.prototype;
         // point to a new proxy object.
@@ -36,32 +36,32 @@ let inherit = (function(){
 
         // restore the constructor, so that constructor name is RIGHT!!!
         child.prototype.constructor = child;
-    }
-}())
+    };
+})();
 
 // make the inheritance happened.
 inherit(Child, Parent);
 
-let kid = new Child("Patrick");
+let kid = new Child('Patrick');
 
-console.debug("kid.name", kid.name);
+console.debug('kid.name', kid.name);
 
 // method on parent's prototype can be inherited.
-console.debug("kid.say", kid.say());
+console.debug('kid.say', kid.say());
 
 // change something on child's prototype
 Child.prototype.sayHi = function () {
-    return "hi"
-}
+    return 'hi';
+};
 
 // will affect child's instance
-console.debug("kid.sayHi", kid.sayHi());
+console.debug('kid.sayHi', kid.sayHi());
 
 // but will not affect parent's instance.
 let p = new Parent();
-console.debug("p.sayHi", p.sayHi);
+console.debug('p.sayHi', p.sayHi);
 
 // kid's constructor name is right!
-console.debug("kid.constructor.name", kid.constructor.name);
-console.debug("kid instanceof Child", kid instanceof Child);
-console.debug("kid instanceof Parent", kid instanceof Parent);
+console.debug('kid.constructor.name', kid.constructor.name);
+console.debug('kid instanceof Child', kid instanceof Child);
+console.debug('kid instanceof Parent', kid instanceof Parent);

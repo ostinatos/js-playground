@@ -15,18 +15,18 @@ function Parent(name) {
 
 Parent.prototype.say = function () {
     return this.name;
-}
+};
 
 function Child(name) {
     // invoke parent's constructor function.
     Parent.apply(this, arguments);
- }
+}
 
-let kid = new Child("Patrick");
-console.debug("kid.name", kid.name);
+let kid = new Child('Patrick');
+console.debug('kid.name', kid.name);
 
 // method on parent's prototype can not be inherited.
-console.debug("kid.say", kid.say);
+console.debug('kid.say', kid.say);
 
 // kid's constructor is child
-console.debug("kid.constructor.name", kid.constructor.name);
+console.debug('kid.constructor.name', kid.constructor.name);

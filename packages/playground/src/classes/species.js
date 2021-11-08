@@ -8,7 +8,7 @@ class MyArray extends Array {
 }
 
 let a = new MyArray(1, 2, 3);
-let mapped = a.map(x => x * x);
+let mapped = a.map((x) => x * x);
 
-console.log("mapped instanceof MyArray ", mapped instanceof MyArray); // false
-console.log("mapped instanceof Array", mapped instanceof Array);   // true
+console.log('mapped instanceof MyArray ', mapped instanceof MyArray); // false
+console.log('mapped instanceof Array', mapped instanceof Array); // true

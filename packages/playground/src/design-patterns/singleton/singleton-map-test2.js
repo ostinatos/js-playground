@@ -1,3 +1,3 @@
-import {get} from './singleton-map'
+import { get } from './singleton-map';
 
-console.debug("get('goo'): ",get("goo"));
+console.debug("get('goo'): ", get('goo'));
