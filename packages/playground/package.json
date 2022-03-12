@@ -1,37 +1,39 @@
 {
-  "name": "playground",
-  "version": "0.0.0",
-  "description": "common js playground. have fun with JS.",
-  "author": "revlekt <revlekt@gmail.com>",
-  "homepage": "https://github.com/ostinatos/js-playground#readme",
-  "license": "ISC",
-  "main": "lib/playground.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ostinatos/js-playground.git"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview"
-  },
-  "bugs": {
-    "url": "https://github.com/ostinatos/js-playground/issues"
-  },
-  "dependencies": {
-    "collections": "^5.1.12",
-    "uuid": "^8.2.0"
-  },
-  "devDependencies": {
-    "typescript": "^4.3.2",
-    "vite": "^2.6.4"
-  }
+    "name": "playground",
+    "version": "0.0.0",
+    "description": "common js playground. have fun with JS.",
+    "author": "revlekt <revlekt@gmail.com>",
+    "homepage": "https://github.com/ostinatos/js-playground#readme",
+    "license": "ISC",
+    "main": "lib/playground.js",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "publishConfig": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ostinatos/js-playground.git"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "serve": "vite preview",
+        "test": "vitest"
+    },
+    "bugs": {
+        "url": "https://github.com/ostinatos/js-playground/issues"
+    },
+    "dependencies": {
+        "collections": "^5.1.12",
+        "uuid": "^8.2.0"
+    },
+    "devDependencies": {
+        "typescript": "^4.3.2",
+        "vite": "^2.6.4",
+        "vitest": "^0.6.0"
+    }
 }

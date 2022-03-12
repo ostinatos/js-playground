@@ -8,7 +8,7 @@
 
 // import "./js-modules"
 
-import './design-patterns/singleton';
+// import './design-patterns/singleton';
 
 // import './design-patterns/factory'
 
@@ -92,5 +92,7 @@ import './design-patterns/singleton';
 // import './data-structure/heap/index'
 
 // import './lint-examples/function-usage'
+
+import './reactivity/proxy-based/demo';
 
 console.log('hello javascript');
