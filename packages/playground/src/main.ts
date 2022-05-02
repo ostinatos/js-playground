@@ -25,6 +25,7 @@
 // import './algorithm/sorting'
 
 // import './function/default-parameter'
+import './function/this';
 
 // import './operators/destructuring'
 // import "./operators/optional-chaining";
@@ -47,8 +48,9 @@
 
 // import './utils/debounce'
 // import './utils/throttle'
+// import './utils/swap';
 
-// import './patterns/closures'
+// import './patterns/closures';
 // import "./patterns/tree-search";
 // import './patterns/iteration-protocol';
 // import './patterns/array-traverse'
@@ -70,6 +72,7 @@
 // import "./leetcode/80-remove-duplicates";
 // import './leetcode/977-squares-of-a-sorted-array'
 // import './leetcode/15-3sums';
+import './leetcode/268-missing-number';
 
 // import "./educative/sliding-window/average-of-contiguous-sub-array-of-size-k";
 // import "./educative/sliding-window/max-sum-subarray-of-size-k";
@@ -93,6 +96,6 @@
 
 // import './lint-examples/function-usage'
 
-import './reactivity/proxy-based/demo';
+// import './reactivity/proxy-based/demo';
 
 console.log('hello javascript');
