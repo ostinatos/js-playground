@@ -25,7 +25,7 @@
 // import './algorithm/sorting'
 
 // import './function/default-parameter'
-import './function/this';
+// import './function/this';
 
 // import './operators/destructuring'
 // import "./operators/optional-chaining";
@@ -34,6 +34,7 @@ import './function/this';
 // import './global-object/object'
 
 // import './patterns/variadic-function'
+import './patterns/optimize-long-task';
 
 // import './statement/async-await'
 // import './statement/async-await-2'
@@ -72,7 +73,7 @@ import './function/this';
 // import "./leetcode/80-remove-duplicates";
 // import './leetcode/977-squares-of-a-sorted-array'
 // import './leetcode/15-3sums';
-import './leetcode/268-missing-number';
+// import './leetcode/268-missing-number';
 
 // import "./educative/sliding-window/average-of-contiguous-sub-array-of-size-k";
 // import "./educative/sliding-window/max-sum-subarray-of-size-k";
